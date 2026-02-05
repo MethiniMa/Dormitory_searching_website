@@ -29,7 +29,7 @@ It supports browsing listings, keyword search, property details, and tenant/owne
 ## Tech Stack
 - Frontend: HTML, CSS, JavaScript
 - Backend: PHP (Apache)
-- Database: MySQL / MariaDB
+- Database: MySQL
 
 ## Repository Structure
 - `renthouse/` – main PHP application
