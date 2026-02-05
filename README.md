@@ -1,4 +1,4 @@
-# AU Lodge – Dormitory / Rental Searching Website (PHP + MySQL)
+# AU Lodge – Dormitory / Rental Searching Website
 
 AU Lodge is a web application for Assumption University students/staff to search nearby dorms/apartments/condos.  
 It supports browsing listings, keyword search, property details, and tenant/owner/admin account flows.
