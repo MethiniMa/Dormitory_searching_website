@@ -7,7 +7,7 @@ It supports browsing listings, keyword search, property details, and tenant/owne
 ![Home](screenshots/01-home.png)
 ![Listings](screenshots/02-list.png)
 ![Search Results](screenshots/03-search-results.png)
-![Property Detail](screenshots/04-detail.png)
+![Property Detail](screenshots/04-room-detail.png)
 ![Login](screenshots/05-login.png)
 ![Tenant Profile](screenshots/06-profile.png)
 
