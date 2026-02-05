@@ -1,27 +1,55 @@
-# Dormitory_Seaching_Website
-"AU Lodge" is a website designed for the students and staff of Assumption University. It provides a convenient solution for finding lodges or apartments near the university. The website offers an online platform for searching for accommodation, saving time and effort compared to visiting the location in person. It features a range of lodges located in various areas surrounding the university, making the search process easier and more efficient. "AU Lodge" is a useful tool for anyone seeking accommodation near the university, providing a quick and convenient solution to the challenges of finding a suitable place to stay.
+# AU Lodge – Dormitory / Rental Searching Website (PHP + MySQL)
 
-## • Main goals –what is the project about?
-“AU Lodge”, a website for Assumption University students and staff who are looking for lodges or apartments nearby. The website makes searching for dormitories, apartments, and accommodations easily accessible online to facilitate users in finding lodges in various locations around the university without the user having to waste time traveling by themselves. It makes searching for lodges more convenient and saves time to go to the actual location.
+AU Lodge is a web application for Assumption University students/staff to search nearby dorms/apartments/condos.  
+It supports browsing listings, keyword search, property details, and tenant/owner/admin account flows.
 
-## • Main functionality and characteristics.
-The website will show you various information to help users decide on lodge around the university: 
-1. rent price
-2. cost of utilities
-3. Picture of the room
-4. Rent agreement format
-5. facilities: pool, fitness center, pets allowed, free cleaning service [how many times a month]
-6. shuttle service from the lodge to university [how many rounds per day]
-7. time spent traveling to university-nearby places [Top, 7-11, hospital, coffee shop] 
-8. room type 
-9. contact information
-10. security system
+## Screenshots
+![Home](screenshots/01-home.png)
+![Listings](screenshots/02-list.png)
+![Search Results](screenshots/03-search-results.png)
+![Property Detail](screenshots/04-detail.png)
+![Login](screenshots/05-login.png)
+![Tenant Profile](screenshots/06-profile.png)
 
-## features of the system:
-1. login and Logout: Admin side and student side
-2. Google map: Route from university to lodge
-3. search filter function: sort items by price/distance/star
-4. comment/ star / review from users: ex. the room is too small!!!
+## Key Features
+- Browse rental listings with property cards and detail pages
+- Keyword search + results page
+- Tenant login/register + profile management
+- Owner/Admin modules (manage listing / user flows) *(based on project folders)*
+- Reviews/ratings and basic user feedback *(if enabled in your build)*
+- Map/route module for location and route viewing *(Google Maps / map module)*
+
+## Information Shown for Each Property
+- Rent price + utilities cost
+- Room type + room photos
+- Facilities (e.g., fitness, pool, laundry, shuttle)
+- Location + nearby places + estimated travel time
+- Security system + contact information
+
+## Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP (Apache)
+- Database: MySQL / MariaDB
+
+## Repository Structure
+- `renthouse/` – main PHP application
+  - `config/` – DB configuration
+  - `admin/` – admin pages
+  - `owner/` – owner pages
+  - `map/` – map related scripts/pages
+  - `images/` – UI images/assets
+> Large photo folders (e.g., owner-photo/tenant-photo) may be excluded to keep the repo lightweight.
+
+## Local Setup (XAMPP)
+1. Install **XAMPP** and start **Apache** + **MySQL**
+2. Place this repo (or the `renthouse/` folder) under:
+   - `C:\xampp\htdocs\`
+3. Create/restore a database named `renthouse`
+4. Check DB config:
+   - `renthouse/config/config.php`
+```php
+$db = new mysqli('localhost', 'root', '', 'renthouse');
+
 5. recommend nearby lodges-number of views
 6. chat for contacting admins
 
